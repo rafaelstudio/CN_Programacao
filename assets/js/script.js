@@ -1,4 +1,4 @@
-window.onload = function myFunction() {
+window.onload = function PegarDias() {
     var d = new Date();
     var weekday = new Array(7);
     weekday[0] = "Domingo";
