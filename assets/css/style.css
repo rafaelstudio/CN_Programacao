@@ -1,0 +1,298 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/bgBody.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	
+
+}
+
+.Topo{
+	margin: 0;
+	display: flex;
+	overflow: hidden;	
+	width: 100%;
+	justify-content:center;
+	background-color: #000;
+	height: 100px;
+}
+
+.banner{
+	padding: 1px;
+	margin: 0;
+}
+
+.horaTopo{
+	margin: 10px;
+	font-weight: bold;
+}
+
+.horaTopo span{
+	font-size: 30px;
+}
+
+.horaTopo p{
+	margin-top: -20;
+}
+
+.Under{
+	display: flex;
+	flex: 2;
+	height: 60px;
+}
+
+.DiaProgramacao{
+	width: 100%;
+	background-color: #009ade;
+	border-top: 3px solid #ffea00;
+	padding-left: 20px;
+	height: 60px;
+	font-size: 28px;
+	font-weight: bold;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 800px;
+
+}
+
+.DiaProgramacao span{
+	text-align: center;
+	align-items: center;
+	margin-left: 10px;
+
+}
+.container{	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 800px;	
+	height: auto;
+}
+
+.Barra{
+	display: flex;
+	justify-content:center;
+	width: 100%;
+	height: 20px;
+	background-color: #4c4c4c;
+	
+}
+
+.logo{
+	background-color: #000;	
+	display: flex;
+	justify-content: flex-end;
+	z-index: 10;
+}
+
+.logo img{
+	position: absolute;  
+	z-index: 10;
+	background-color: #4c4c4c;
+} 
+
+.pesquisa{
+	background-color: #000;
+	color: #FFFFFF;
+	border: none;
+	margin-top: 1px;
+	text-align: center;
+}
+
+
+#corpo{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#Geral{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+#Geral section{
+	flex: 2;
+}
+
+#Geral aside{
+	flex: 1;
+	background-color: #ffea00;
+}
+
+.Widget{
+	width: 80%;
+	height: auto;
+	margin-left: 40px;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.azul{background-color: #009ade}
+.amarelo{background-color: #ffea00}
+.rosa{background-color: #ec0080}
+.preto{background-color: #030002; color:#009ade;}
+
+.widget_hora{
+	display: flex;
+	flex: 1;
+	min-width: 70px;
+	max-width: 70px;
+	height: 70px;
+	margin: 2px;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 18px;
+	opacity: 0.5;
+}
+
+.widget_hora:hover{
+	opacity: 1;
+}
+
+.widget_hora span{
+	color: #4c4c4c;
+	font-size: 60px;
+}
+
+.widget_hora a{
+	color: #4c4c4c;
+	text-decoration: none;
+}
+
+
+.widget_hora span a:hover{
+	color: #000;
+}
+
+
+
+
+aside{
+	display: flex;
+	margin-right: 35px;
+	font-size: 40px;
+	font-weight: bold;
+	justify-content: center;	
+	flex-direction: column;
+	text-align: center;
+}
+
+.proxDesenho{
+	display: flex;
+	align-items: center;
+	width: 90%;
+	border: 1px solid #FFFFFF;
+	color: #000;
+	background-color: #FFFFFF;
+	height: 70px;
+	margin: 4px 10px;
+	font-size: 18px;
+
+}
+
+.horaProx{
+	writing-mode: vertical-lr;
+	font-size: 25px;
+	margin: 1px;
+	padding: 2px;
+}
+
+.imgDes{
+	padding: 5px;
+	margin: 5px;
+}
+
+#Navigation{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.PorDesenho{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	background-color: #ec0080;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	border-bottom: 15px solid #009ade;
+
+}
+
+.PorDesenho span{
+	font-size: 100px;
+	margin: 5px;
+	padding-left: 10px;
+}
+
+.slide{
+	display: flex;
+}
+
+.slideImg {
+	width:50px;
+	height: auto;
+	padding: 10px;
+	margin: 10px 25px;
+}
+
+.secSuperior{
+	display: flex;
+	flex: 1;
+	justify-content:center;
+	width: 100%;
+	height: 130px;
+	background-color: #4c4c4c;
+}
+
+.secInferior{
+	display: flex;
+	justify-content:center;	
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	
+}
+
+.InfText{
+	display: flex;
+	justify-content:center;	
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 800px;	
+	height: auto;
+	text-align: center;
+}
+
+.secInferior p{
+	margin: 1px 10px;
+	font-size: 15px;
+}
+
+
+.Logo2 img{
+	margin-top: 40px;
+}
+
+.supText{
+	text-align: center;
+	font-size: 12px;
+	flex: 2;
+	max-width: 800px;
+	margin-top: 40px;
+	margin-left: 20px;
+}
