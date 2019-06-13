@@ -296,3 +296,32 @@ aside{
 	margin-top: 40px;
 	margin-left: 20px;
 }
+
+.modal{
+	width: 450px;
+	height: auto;
+	background-color: #ec0080;	
+	border-radius: 4%;
+}
+
+.top-modal{
+	margin-top:40px; 
+	width: 90%;
+	height: 200px;
+	background-color: #ffea00;
+	padding-top: 10px;
+	padding-left: 10px;
+	
+}
+
+.body-Model{
+	display: flex;
+	border-bottom: 5px solid #ffea00;	
+	flex-direction:column; 
+	padding: 10px;
+}
+
+.body-Model-Desc{
+	border-bottom: 5px solid #ffea00;
+	padding: 10px;
+}
