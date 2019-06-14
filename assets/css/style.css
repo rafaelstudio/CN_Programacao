@@ -352,14 +352,23 @@ aside{
 .top-modal-nome{
 	background-color: #009ade;
 	width: 300px;
-	height: 65px;
+	height: 75px;
 	z-index: 1;
 	text-align: center;
 	position: absolute;
 	margin-left: 70px;
-	margin-top: 18px;
+	margin-top: 13px;
 }
 
+.top-modal-nome p{
+	font-weight: normal;
+	margin-top:-3px; 
+}
+
+.top-modal-nome span{
+	font-weight: bold;
+	font-size: 25px;
+}
 .body-Model{
 	border-bottom: 5px solid #ffea00;
 	padding: 10px;
