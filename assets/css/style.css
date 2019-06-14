@@ -325,7 +325,7 @@ aside{
 	align-items: center;
 	justify-content: center;
 	margin-top:45px; 
-	height: 200px;
+	height: 100px;
 	font-weight: bolder;
 	background-color: #ffea00;
 	padding-top: 10px;
@@ -339,12 +339,12 @@ aside{
 	justify-content: center;
 	background-color: #ffffff;
 	border: 10px solid #009ade;
-	width: 130px;
+	width: 80px;
 	z-index: 2;
-	height: 130px;
+	height: 80pxs;
 	border-radius: 50%;	
 	position: absolute;
-	margin-top: 20px;
+	margin-top: 10px;
 	font-weight:bold;
 
 }
@@ -352,19 +352,25 @@ aside{
 .top-modal-nome{
 	background-color: #009ade;
 	width: 300px;
-	height: 130px;
+	height: 65px;
 	z-index: 1;
 	text-align: center;
 	position: absolute;
-	margin-left: 100px;
-	margin-top: 30px;
+	margin-left: 70px;
+	margin-top: 18px;
 }
 
 .body-Model{
-	display: flex;
-	border-bottom: 5px solid #ffea00;	
-	flex-direction:column; 
+	border-bottom: 5px solid #ffea00;
 	padding: 10px;
+}
+
+.week{
+	display: flex;
+}
+
+.week p{
+	margin-left: 5px;
 }
 
 .body-Model-Desc{
