@@ -178,9 +178,10 @@
 
 
 		</footer>
-
+<!-- Inicio da pagina que apre ao clicar em um  desenho por horario-->
 		<div id="modal-desenho" class="modal-container" >
 			<div class="modal">
+				<button class="fechar"> x </button>
 				<div class="top-modal"> 
 					<div class="top-modal-imagem">
 							<img src="assets/images/aventura.png" width="60" height="60" />
@@ -217,10 +218,10 @@
 										<P>Diretor: Juliano Enrico </P>
 										<P>Casting:</P>									
 			
-							
+							</div>
 							
 						</div>
-
+							
 			</div>
 
 
@@ -228,5 +229,20 @@
 	
 
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script>
+	function IniciaModal(modalID){
+      const modal = document.getElementById(modalID);
+      modal.classList.add('mostrar');
+      modal.addEventListener('click', (e) => {
+          if(e.target.id == modalID || e.target.className == 'fechar'){
+              modal.classList.remove('mostrar');
+          }
+      });
+  }
+
+  const proxDesenho = document.querySelector('.proxDesenho');
+  proxDesenho.addEventListener('click', ()=> IniciaModal('modal-desenho'));
+
+</script>
 </body>
 </html>

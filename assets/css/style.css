@@ -298,20 +298,66 @@ aside{
 }
 
 .modal{
-	width: 450px;
+	display: flex;
+	flex-direction: column;
+	width: 500px;
 	height: auto;
 	background-color: #ec0080;	
-	border-radius: 4%;
+	border-radius: 2%;
+	position: relative;
 }
 
-.top-modal{
-	margin-top:40px; 
-	width: 90%;
+.fechar{
+	position: absolute;
+	top: 5px;
+	text-align: center;
+	font-size: 22px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
+	border-radius: 20%;
+	color: #FFFFFF;
+	background: #009ade;
+	cursor: pointer;
+}
+
+.top-modal{	
+	align-items: center;
+	justify-content: center;
+	margin-top:45px; 
 	height: 200px;
+	font-weight: bolder;
 	background-color: #ffea00;
 	padding-top: 10px;
-	padding-left: 10px;
+	padding-left: 20px;
 	
+}
+
+.top-modal-imagem{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	border: 10px solid #009ade;
+	width: 130px;
+	z-index: 2;
+	height: 130px;
+	border-radius: 50%;	
+	position: absolute;
+	margin-top: 20px;
+	font-weight:bold;
+
+}
+
+.top-modal-nome{
+	background-color: #009ade;
+	width: 300px;
+	height: 130px;
+	z-index: 1;
+	text-align: center;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 30px;
 }
 
 .body-Model{
@@ -325,3 +371,39 @@ aside{
 	border-bottom: 5px solid #ffea00;
 	padding: 10px;
 }
+
+.modal-container{
+	
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top:0px;
+	 z-index: 2000;
+	 justify-content: center;
+	 align-items: center;
+}
+
+.mostrar{	
+	display: flex;
+}
+
+
+ /* Criando animacao para aparecer o modal*/
+@keyframes modal{
+	from{
+		opacity: 0;
+		transform: translate3d(0,-60px,0)
+	}
+	to{
+		opacity: 1;
+		transform: translate(0,0,0);
+	}
+}
+
+
+.mostrar .modal{
+	animation: modal .3s;
+}
+
