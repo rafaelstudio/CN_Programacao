@@ -422,3 +422,56 @@ aside{
 	animation: modal .3s;
 }
 
+
+.modal2{
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	height: 250px;
+	background-color: #009ade;	
+	border-radius: 2%;
+}
+
+.fechar2{
+	position: absolute;
+	top: 5px;
+	text-align: center;
+	font-size: 22px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
+	border-radius: 20%;
+	color: #FFFFFF;
+	background: #ec0080;
+	cursor: pointer;
+}
+
+.modal-container2{
+	
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top:0px;
+	 z-index: 2000;
+	 justify-content: center;
+	 align-items: center;
+}
+
+.top-modal2{
+	align-items: center;
+	justify-content: center;
+	margin-top:45px; 
+	height: 100px;
+	font-weight: bolder;
+	background-color: #ffea00;
+	padding-top: 10px;
+	padding-left: 20px;
+	
+}
+
+.top-modal-imagem2{
+	
+}
+
