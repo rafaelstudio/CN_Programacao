@@ -1,3 +1,5 @@
+
+
 window.onload = function PegarDias() {
     //Funcao para mostrar os Dias da Semana 
     var d = new Date();
@@ -25,6 +27,7 @@ window.onload = function PegarDias() {
       
   }
 
+  //Abrir e fechar o modal por Hora
   function IniciaModal(modalID){
     const modal = document.getElementById(modalID);
     modal.classList.add('mostrar');
@@ -37,6 +40,21 @@ window.onload = function PegarDias() {
 
 const proxDesenho = document.querySelector('.proxDesenho');
 proxDesenho.addEventListener('click', ()=> IniciaModal('modal-desenho'));
+
+
+//Segundo Modal
+function IniciaModal2(modalID){
+    const modal2 = document.getElementById(modalID);
+    modal2.classList.add('mostrar');
+    modal2.addEventListener('click', (e) => {
+        if(e.target.id == modalID || e.target.className == 'close'){
+            modal.classList.remove('mostrar');
+        }
+    });
+}
+
+const swiperSlide = document.querySelector('.swiper-slide');
+swiperSlide.addEventListener('click', ()=> IniciaModal('modal-programacao'));
 
 
 

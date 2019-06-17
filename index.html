@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
         <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">		
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
 		
 	<title>Cartoon Network-Programacao</title>
 </head>
@@ -119,28 +120,32 @@
 		</section>
 
 		<section id="Navigation">
-			<div class=" container PorDesenho">
-				<span> < </span>
-					<div class="slide">
-						<div class="slideImg"> <img src="assets/images/jorel.png" width="80" height="150" /> </div>
-						<div class="slideImg"> <img src="assets/images/gumball.png" width="80" height="150" /> </div>
-						<div class="slideImg"> <img src="assets/images/aventura.png" width="80" height="150" /> </div>
-						<div class="slideImg"> <img src="assets/images/steven.png" width="80" height="150" /> </div>
-						<div class="slideImg"> <img src="assets/images/Showdesenho.png" width="80" height="150" /> </div>
-						
-											
-							
-					</div>
-					
-
-
-				<span> > </span>
-
-			</div>	
-
+			<div class=" container PorDesenho" >
+					<div class="swiper-container">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide"><img src="assets/images/jorel.png"  height="150" /> </div>
+							  <div class="swiper-slide"><img src="assets/images/gumball.png"  height="150" /> </div>
+							  <div class="swiper-slide"> <img src="assets/images/aventura.png"  height="150" /> </div>
+							  <div class="swiper-slide"><img src="assets/images/steven.png"  height="150" /></div>
+							  <div class="swiper-slide"><img src="assets/images/Showdesenho.png"  height="150" /> </div>
+							  <div class="swiper-slide"><img src="assets/images/jorel.png"  height="150" /> </div>
+							  <div class="swiper-slide"><img src="assets/images/gumball.png"  height="150" /> </div>
+							  <div class="swiper-slide"> <img src="assets/images/aventura.png"  height="150" /> </div>
+							  <div class="swiper-slide"><img src="assets/images/steven.png"  height="150" /></div>
+							  <div class="swiper-slide"><img src="assets/images/Showdesenho.png"  height="150" /> </div>
+							 
+							 
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						  </div>
 
 		</section>
 
+		
 		<footer>
 			
 				<div class="secSuperior">
@@ -237,7 +242,7 @@
 				<button class="fechar2"> X </button>
 				<div class="top-modal2"> 
 					<div class="top-modal-imagem2">
-							<img src="assets/images/aventura.png" width="60" height="60" />
+						<img src="assets/images/jorel.png" width="60" height="60" />
 					</div>
 
 					<div class="top-modal-nome2"> 
@@ -246,6 +251,47 @@
 					</div>				
 					
 				</div>
+
+				<div class="diaSemanaS">
+					<div class="PDia">
+						<p>Domingo</p>
+						<p>17</p>
+						<p>23:30</p>
+					</div>
+
+					<div class="PDia">
+							<p>Segunda</p>
+							<p>18</p>
+							<span>15:30</span>
+					</div>
+					<div class="PDia">
+							<p>Terça</p>
+							<p>17</p>
+							<p>15:30</p>
+					</div>
+					<div class="PDia">
+							<p>Quarta</p>
+							<p>17</p>
+							<p>15:30</p>
+					</div>
+					<div class="PDia">
+							<p>Quinta</p>
+							<p>17</p>
+							<p>15:30</p>
+					</div>
+					<div class="PDia">
+							<p>Sexta</p>
+							<p>17</p>
+							<p>15:30</p>
+					</div>
+					<div class="PDia">
+							<p>Sabado</p>
+							<p>17</p>
+							<p>23:30</p>
+					</div>
+
+						
+				</div>
 				
 			</div>
 		</div>
@@ -253,6 +299,28 @@
 	
 
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+
+<script>
+
+	 var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 1,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+	  },
+	  //O botoes não estao funcionando, funciona apenas se clicar e arrastar.
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</script>
 
 </body>
 </html>
