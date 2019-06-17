@@ -47,7 +47,7 @@ function IniciaModal2(modalID){
     const modal2 = document.getElementById(modalID);
     modal2.classList.add('mostrar');
     modal2.addEventListener('click', (e) => {
-        if(e.target.id == modalID || e.target.className == 'close'){
+        if(e.target.id == modalID || e.target.className == 'fechar2'){
             modal.classList.remove('mostrar');
         }
     });
